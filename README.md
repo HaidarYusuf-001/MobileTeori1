@@ -1,16 +1,13 @@
 # tugaskelompok1
 
-A new Flutter project.
+Tugas untuk Kelompok Mobile Teori
+Membuat aplikasi to-do-list
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Cara menambah page baru yaitu dengan menambahkan bagian /lib/app/modules/(direktori_page)
+**Pastikan untuk selalu menggunakan arsitektur GetX**
+Lihat contoh pada kode yang saya berikan, dan samakan juga struktur direktorinya.
+Penyimpanan gambar berada di direktori /assets/images/.
+**Jangan gunakan format svg, lebih baik export PNG dengan H512 W512**
+Pemanggilan assets/images lihat pada kode view yang sudah ada.
