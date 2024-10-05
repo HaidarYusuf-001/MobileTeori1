@@ -1464,7 +1464,7 @@ class HomeView extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    left: 354,
+                    left: 330,
                     top: 6,
                     child: Text(
                       'See all',
