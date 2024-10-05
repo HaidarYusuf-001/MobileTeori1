@@ -1144,7 +1144,10 @@ class HomeView extends StatelessWidget {
                                               height: 18,
                                               clipBehavior: Clip.antiAlias,
                                               decoration: BoxDecoration(color: Colors.black.withOpacity(0)),
-                                              child: FlutterLogo(),
+                                              child: Image.asset(
+                                                'assets/images/beginner.png', // Ganti dengan asset gambar Anda
+                                                fit: BoxFit.contain,
+                                              ),
                                             ),
                                           ),
                                         ],
@@ -1173,7 +1176,10 @@ class HomeView extends StatelessWidget {
                                       height: 20,
                                       clipBehavior: Clip.antiAlias,
                                       decoration: BoxDecoration(),
-                                      child: FlutterLogo(),
+                                      child: Image.asset(
+                                        'assets/images/tabler_dots.png', // Gunakan asset gambar Anda
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
                                   ),
                                   Positioned(
@@ -1190,7 +1196,8 @@ class HomeView extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Positioned(
+
+                                    Positioned(
                                     left: 9,
                                     top: 65,
                                     child: Container(
@@ -1293,7 +1300,10 @@ class HomeView extends StatelessWidget {
                                               height: 17,
                                               clipBehavior: Clip.antiAlias,
                                               decoration: BoxDecoration(),
-                                              child: FlutterLogo(),
+                                              child: Image.asset(
+                                                'assets/images/advanced.png', // Gunakan asset gambar Anda
+                                                fit: BoxFit.contain,
+                                              ),
                                             ),
                                           ),
                                         ],
@@ -1322,7 +1332,10 @@ class HomeView extends StatelessWidget {
                                       height: 20,
                                       clipBehavior: Clip.antiAlias,
                                       decoration: BoxDecoration(),
-                                      child: FlutterLogo(),
+                                      child: Image.asset(
+                                        'assets/images/tabler_dots.png', // Gunakan asset gambar Anda
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
                                   ),
                                   Positioned(
@@ -1399,8 +1412,205 @@ class HomeView extends StatelessWidget {
                 ),
               ),
             ),
+            Container(
+              width: 26,
+              height: 26,
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    child: Container(
+                      width: 26,
+                      height: 26,
+                      decoration: ShapeDecoration(
+                        color: Colors.white,
+                        shape: OvalBorder(),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 4,
+                    top: 4,
+                    child: Container(
+                      width: 17,
+                      height: 17,
+                      clipBehavior: Clip.antiAlias,
+                      decoration: BoxDecoration(),
+                      child: Image.asset("assets/images/advanced.png"),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 28),
+            Container(
+              width: 390,
+              height: 123,
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    child: Text(
+                      'Statistics',
+                      style: TextStyle(
+                        color: Color(0xFF13AE85),
+                        fontSize: 18,
+                        fontFamily: 'Roboto',
+                        fontWeight: FontWeight.w500,
+                        height: 0,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 354,
+                    top: 6,
+                    child: Text(
+                      'See all',
+                      textAlign: TextAlign.right,
+                      style: TextStyle(
+                        color: Color(0xFF908F8F),
+                        fontSize: 9,
+                        fontFamily: 'Roboto',
+                        fontWeight: FontWeight.w500,
+                        height: 0,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 0,
+                    top: 40,
+                    child: Container(
+                      width: 390,
+                      height: 83,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            child: Container(
+                              width: 390,
+                              height: 83,
+                              decoration: ShapeDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment(1.00, 0.00),
+                                  end: Alignment(-1, 0),
+                                  colors: [Color(0xFFFFB167), Color(0xFFC2BFF8)],
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 21,
+                            top: 24,
+                            child: SizedBox(
+                              width: 207,
+                              height: 12,
+                              child: Text(
+                                'Completed Task',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  height: 0,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 340,
+                            top: 8,
+                            child: Container(
+                              width: 19,
+                              height: 22,
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(),
+                              child: Image.asset(
+                                'assets/images/tabler_dots.png', // Gunakan asset gambar Anda
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 29.60,
+                            top: 50.42,
+                            child: Container(
+                              width: 329.06,
+                              height: 4,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFFD9D9D9),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 21,
+                            top: 50.42,
+                            child: Container(
+                              width: 190,
+                              height: 4,
+                              decoration: ShapeDecoration(
+                                color: Colors.black,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 29.60,
+                            top: 65.16,
+                            child: SizedBox(
+                              width: 88.14,
+                              height: 6.98,
+                              child: Text(
+                                'Progress',
+                                style: TextStyle(
+                                  color: Color(0xFF908F8F),
+                                  fontSize: 8,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  height: 0,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 270.52,
+                            top: 65.16,
+                            child: SizedBox(
+                              width: 88.14,
+                              height: 6.98,
+                              child: Text(
+                                '58%',
+                                textAlign: TextAlign.right,
+                                style: TextStyle(
+                                  color: Color(0xFF908F8F),
+                                  fontSize: 8,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  height: 0,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
             // Tambahkan ini di bagian bawah Column sebelum widget terakhir
-            SizedBox(height: 258),
+            SizedBox(height: 79),
             Container(
               width: 365,
               height: 63,
